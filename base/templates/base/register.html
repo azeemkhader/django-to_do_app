@@ -1,0 +1,9 @@
+<h3>Register</h3>
+<a href="{% url 'tasks' %}">GO BACK</a>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+<input type="submit" value="Register">
+</form>
+
+<p> Have An Account??? <a href="{% url 'login' %}">Login</a></p>
