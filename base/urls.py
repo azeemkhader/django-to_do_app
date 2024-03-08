@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from .views import Tasklist,TaskDetail,TaskCreate,TaskUpdate,TaskDelete,CustomLogin,RegisterPage
 from django.contrib.auth.views import LogoutView
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('login/',CustomLogin.as_view(),name='login'),
